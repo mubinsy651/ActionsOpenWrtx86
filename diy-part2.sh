@@ -21,4 +21,12 @@ sed -i 's/luci-static\/argon/luci-static\/design/g' package/lean/default-setting
 #sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' target/linux/x86/Makefile
 #sed -i "s/.*PKG_VERSION:=.*/PKG_VERSION:=4.3.9_v1.2.14/" package/lean/qBittorrent-static/Makefile
 #sed -i "s/.*PKG_VERSION:=.*/PKG_VERSION:=5.0.0-stable/" package/libs/wolfssl/Makefile
+# 修改升级检测
+sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/usr/share/Check_Update.sh
+sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/usr/share/Lenyu-auto.sh
+sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/usr/share/Lenyu-version.sh
+sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/usr/share/Lenyu-pw.sh
+
+
+
 # welcome test
