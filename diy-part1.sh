@@ -629,5 +629,4 @@ exit 0
 EOF
 # 添加 Mihomo feed
 echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
-echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> "feeds.conf.default"
-echo "src-git small https://github.com/kenzok8/small" >> "feeds.conf.default"
+
