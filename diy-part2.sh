@@ -29,7 +29,8 @@ sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/
 sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/usr/share/Lenyu-auto.sh
 sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/usr/share/Lenyu-version.sh
 sed -i 's|/Lenyu2020/Actions-OpenWrt-x86|/mubinsy651/ActionsOpenWrtx86|g' files/usr/share/Lenyu-pw.sh
-
+rm -rf feeds/packages/lang/rust
+git clone https://github.com/sbwml/packages_lang_rust feeds/packages/lang/rust
 
 
 # welcome test
