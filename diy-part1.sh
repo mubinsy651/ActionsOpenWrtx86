@@ -629,6 +629,5 @@ fi
 echo_blue "=== Passwall 热更新完成，网络已无缝恢复 ==="
 exit 0
 EOF
-# 添加 Mihomo feed
-echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
+
 
