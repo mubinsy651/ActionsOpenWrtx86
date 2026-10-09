@@ -18,8 +18,9 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf
 # Add passwall
 echo "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main" >> "feeds.conf.default"
 #
-# 添加 Mihomo feed
-echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
+# 添加 Mihomo feed（使用更稳妥的写入方式）
+grep -q "morytyann/OpenWrt-mihomo" feeds.conf.default || \
+  echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> feeds.conf.default
 #
 mkdir -p files/usr/share
 mkdir -p files/etc/
