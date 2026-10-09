@@ -222,11 +222,21 @@ CONFIG_PACKAGE_nlbwmon=y
 CONFIG_PACKAGE_vsftpd-alt=y
 CONFIG_PACKAGE_wol=y
 CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
+# Mihomo 核心与 LuCI 插件
 CONFIG_PACKAGE_luci-app-mihomo=y
 CONFIG_PACKAGE_mihomo=y
 CONFIG_PACKAGE_luci-i18n-mihomo-zh-cn=y
-CONFIG_PACKAGE_firewall4=y
+
+# Mihomo 依赖项
 CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_yq=y
+CONFIG_PACKAGE_firewall4=y
+CONFIG_PACKAGE_ip-full=y
+CONFIG_PACKAGE_kmod-inet-diag=y
+CONFIG_PACKAGE_kmod-nft-socket=y
+CONFIG_PACKAGE_kmod-nft-tproxy=y
+CONFIG_PACKAGE_kmod-tun=y
 CONFIG_PACKAGE_curl=y
 CONFIG_PACKAGE_yq=y
 CONFIG_PACKAGE_kmod-nft-tproxy=y
