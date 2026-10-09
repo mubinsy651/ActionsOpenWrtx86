@@ -18,6 +18,8 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf
 # Add passwall
 echo "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main" >> "feeds.conf.default"
 #
+echo "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main" >> "feeds.conf.default"
+#
 mkdir -p files/usr/share
 mkdir -p files/etc/
 touch files/etc/lenyu_version
