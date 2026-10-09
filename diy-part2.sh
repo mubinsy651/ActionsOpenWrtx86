@@ -9,7 +9,9 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
-
+# 在 diy-part2.sh 中
+cat .diffconfig >> .config
+make defconfig
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
 # 1. 替换 Luci 的默认核心主题依赖
