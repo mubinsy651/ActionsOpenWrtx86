@@ -50,8 +50,7 @@ jobs:
     - name: Free Disk Space (Ubuntu)
       uses: jlumbroso/free-disk-space@main
       with:
-        #tool-cache: true
-        preinstalled-runtimes: true
+        tool-cache: true
         android: true
         dotnet: true
         haskell: true
